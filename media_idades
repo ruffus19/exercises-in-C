@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int idade, soma, quantidade;
+    double media;
+
+
+
+    printf ("digite a sua idade: ");
+    scanf ("&d", &idade);
+    soma = 0 ;
+    quantidade = 0 ;
+
+    while  (idade >= 0)
+    {
+
+        soma = idade + soma;
+        quantidade = quantidade + 1;
+        scanf ("%d", &idade);
+    }
+    if  (quantidade == 0)
+    {
+        printf ("IMPOSSIVEL CALCULAR!");
+    }
+    else
+    {
+        media = (double) soma / quantidade;
+        printf ("media = %.lf\n", media);
+    }
+
+    return 0;
+}
+
+
+

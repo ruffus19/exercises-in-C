@@ -1,0 +1,27 @@
+#include <iostream>
+
+int main() {
+     int eleitores, brancos, nulos , validos;
+     double percBrancos, percNulos, percValidos;
+     
+     printf ("Quantos eleitores votaram?: ");
+     scanf ("%d", &eleitores);
+     
+     printf ("Qual foi o total de brancos?: ");
+     scanf ("%d", &brancos);
+     
+     printf ("Qual foi o total de nulos?: ");
+     scanf ("%d", &nulos);
+
+    printf ("Qual foi o total de validos?: ");
+     scanf ("%d", &validos);
+     
+     percBrancos = (double) (brancos * 100) / eleitores;
+     percNulos = (double) (nulos * 100) / eleitores;
+     percValidos = (double) (validos * 100) / eleitores;
+     
+     printf ("O total de votos em branco foi de %.2lf%%\n", percBrancos);
+      printf ("O total de votos nulos foi de %.2lf%%\n", percNulos);
+       printf ("O total de votos validos foi de %.2lf%%\n", percValidos);
+    return 0;
+}

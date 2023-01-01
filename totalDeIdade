@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    int dias,mes,anos,totalDias;
+    
+    printf ("Informe quantos anos você tem : ");
+    scanf ("%d", &anos);
+    
+    printf ("Informe que dia você nasceu: ");
+    scanf ("%d", &dias);
+    
+    printf ("Informe o mes que você nasceu : ");
+    scanf ("%d", &mes);
+    
+    totalDias = (anos * 365) + (mes * 30) + dias;
+
+    printf ("Você tem %2.d dias de vida", totalDias);    
+    return 0;
+}
